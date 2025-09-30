@@ -127,8 +127,7 @@ const measureUploadForSize = async (sizeBytes: number, signal?: AbortSignal): Pr
     method: 'POST',
     body: data,
     cache: 'no-store',
-    signal,
-    keepalive: true
+    signal
   });
   if (!response.ok) {
     throw new Error(`Upload request failed with status ${response.status}`);
