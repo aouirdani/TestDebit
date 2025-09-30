@@ -221,7 +221,7 @@ export default function SpeedTest() {
                 </h1>
               </div>
               <p className="mt-2 max-w-2xl text-sm text-slate-600 dark:text-slate-300/80">
-                Measure download, upload, latency, and jitter using Cloudflare\'s global CDN endpoints. Optimized for Vercel with instant feedback and run history.
+                Measure download, upload, latency, and jitter using Cloudflare&apos;s global CDN endpoints. Optimized for Vercel with instant feedback and run history.
               </p>
             </div>
             <div className="flex items-center gap-2 self-end md:self-center">
