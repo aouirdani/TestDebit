@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light dark;
+}
+
+body {
+  @apply min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 text-slate-100 antialiased;
+  background-attachment: fixed;
+}
+
+body.light {
+  @apply bg-gradient-to-br from-slate-100 via-slate-200 to-slate-300 text-slate-800;
+}
+
+.glass {
+  @apply rounded-3xl border border-white/10 bg-white/10 backdrop-blur-xl shadow-glass transition-all duration-500;
+}
+
+.glass-light {
+  @apply border-white/60 bg-white/60 text-slate-900;
+}
+
+.card-grid {
+  @apply grid gap-6 md:grid-cols-2;
+}
+
+@keyframes pulse-slow {
+  0%, 100% {
+    transform: scale(0.98);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.02);
+    opacity: 1;
+  }
+}
+
+.pulse-slow {
+  animation: pulse-slow 6s ease-in-out infinite;
+}
